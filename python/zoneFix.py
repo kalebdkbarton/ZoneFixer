@@ -27,7 +27,7 @@ class Origin(Resource): #allow input of origin
 api.add_resource(Record)
 api.add_resource(Origin)
 app.run(debug=True)
-@app.route("/")
+@app.route("/zonefix")
 def zoneFix():
     origin=json.loads(Origin) #grab the origin from the API input
     zone="fixMe.txt" #grab the file
@@ -97,3 +97,6 @@ def zoneFix():
             f.write(output) #write output to file
             f.close()
     fh.close()
+
+if __name__ == "__main__":
+	app.run("0.0.0.0", "5010")
