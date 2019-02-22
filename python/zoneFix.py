@@ -1,4 +1,3 @@
-#! /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
 import sys
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
@@ -99,4 +98,4 @@ def zoneFix():
     fh.close()
 
 if __name__ == "__main__":
-	app.run("0.0.0.0", "5010")
+	("142.93.86.122")
